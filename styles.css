@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+}
+
+header {
+  background-color: peru;
+  height: 10vh;
+}
+
+main {
+  background-color: aliceblue;
+  height: 85vh;
+  display: flex;
+}
+
+aside {
+  background-color: chartreuse;
+  flex: 1;
+}
+
+content {
+  background-color: darkgoldenrod;
+  flex: 3;
+}
+
+footer {
+  background-color: cadetblue;
+  height: 5vh;
+}

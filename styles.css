@@ -5,6 +5,7 @@ body {
 header {
   background-color: peru;
   height: 10vh;
+  display: flex;
 }
 
 main {
@@ -26,4 +27,26 @@ content {
 footer {
   background-color: cadetblue;
   height: 5vh;
+}
+
+#logo {
+  background-color: white;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo img {
+  width: 64px;
+  height: 64px;
+}
+
+.title {
+  padding-left: 6px;
+}
+
+.menu {
+  background-color: turquoise;
+  flex: 3;
 }

@@ -1,24 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import { Post } from './post'
 
+const posts = [{ image: "./post-image.png", title: "Title", date: "02/02/2021" }, { image: "https://d3hnfqimznafg0.cloudfront.net/images/news/ImageForNews_26919_15786618897301054.png", title: "Title2", date: "Date2" }]
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      {posts.map(({ image, title, date }) => {
+        return <Post image={image} title={title} date={date}></Post>
+
+      })}
     </div>
+
+
   );
 }
 
